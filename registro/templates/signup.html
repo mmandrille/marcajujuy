@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="seccion-registro pagina-registro">
+  <h2>Registro</h2>
+  <hr>
+  <form method="post">
+    {% csrf_token %}
+    <div class="input-group">
+        <label for="id_username">Usuario:</label><br>
+        <input type="text" class="form-control" name="username" autofocus maxlength="150" required id="id_username" />
+    </div>
+    
+      <div class="input-group">
+        <label for="id_email">Correo Electronico:</label><br>
+        <input type="email" class="form-control" name="email" id="id_email" maxlength="254" />
+        <small style="color: #eee; text-align: center;">A través de este correo se le informara que su cuenta fue aprobada.</small>
+      </div>
+    
+      <div class="input-group">
+        <label for="id_password1">Contraseña:</label><br>
+        <input type="password" class="form-control" name="password1" id="id_password1" required />
+      </div>
+    
+      <div class="input-group">
+        <label for="id_password2">Repetir Contraseña:</label><br>
+        <input type="password" class="form-control" name="password2" id="id_password2" required />
+      </div>
+    
+      <div class="input-group">
+        <label for="id_nombre">Nombre:</label><br>
+        <input type="text" class="form-control" name="nombre" id="id_nombre" maxlength="50" required />
+      </div>
+    
+      <div class="input-group">
+        <label for="id_apellido">Apellido:</label><br>
+        <input type="text" class="form-control" name="apellido" id="id_apellido" maxlength="50" required />
+      </div>
+    
+      <div class="input-group">
+        <label for="id_localidad">Localidad:</label><br>
+        <input type="text" class="form-control" name="localidad" id="id_localidad" maxlength="30" required />
+      </div>
+    
+      <div class="input-group">
+        <label for="id_telefono">Telefono:</label><br>
+        <input type="text" class="form-control" name="telefono" id="id_telefono" maxlength="20" required />
+      </div>
+    
+      <div class="input-group">
+        <label for="id_empresa">Empresa:</label><br>
+        <input type="text" class="form-control" name="empresa" id="id_empresa" maxlength="100" required />
+      </div>
+    
+      <div class="input-group">
+        <label for="id_producto">Producto:</label><br>
+        <textarea name="producto" class="form-control" id="id_producto" rows="10" cols="40" required></textarea>
+      </div>
+    <button type="submit">Registrarse</button>
+  </form>
+  </section>
+{% endblock %}

@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="home">
+  <div class="paginacion">
+    <a href="#body" class="active"><div class="pelotita"></div></a>
+    <a href="#faq"><div class="pelotita"></div></a>
+    <a href="#archivos"><div class="pelotita"></div></a>
+    <a href="#registro"><div class="pelotita"></div></a>
+  </div>
+  
+  <section class="full-width logo-principal" id="principal">
+    <div class="logo-grande">
+        <div class="logo-nubes">
+          
+        </div>
+        <div class="logo-nubes2">
+          
+        </div>
+        <div class="logo-overlay">
+          
+        </div>
+    </div>
+    <div class="slogan">
+      El mundo necesita escuchar lo que tenemos para contarle.<br>
+      Precisa ver lo que tenemos para mostrarle.<br>
+      Anhela experimentar lo que tenemos para ofrecerle.
+    </div>
+</section>
+  
+<section class="seccion-faq" id="faq">
+  <!--Listado Preguntas y Respuestas del FAQ)-->
+  <br><h1>Preguntas frecuentes</h1>
+  <hr>
+  <ul class="faq col-md-4">
+    {% for faq in faqs %}
+      <li>
+          <div>
+            <a href="#"><h3>{{ faq.pregunta }}</h3></a>
+            <p>{{ faq.respuesta }}</p>
+          </div>
+      </li>
+    {% endfor %}
+  </ul>
+  <div class="col-md-8">
+    <div class="respuesta-activa">
+      
+    </div>
+  </div>
+</section>
+
+<section class="seccion-archivos full-width" id="archivos">
+  <!--Listado de Archivos (Aca deberias generar los bloques irregulares)-->
+  <br><h1>Archivos</h1>
+  <hr>
+  <div class="link-biblioteca">
+      Acceda a la Biblioteca de Archivos <a href="/archivo/">Aqui</a>
+  </div>
+  <div class="lista-archivos">
+    <ul class="grid">
+      {% for archivo in archivos %}
+        <li class="grid-item">
+            <a href="/archivo/{{ archivo.id }}">
+                <br><h2>{{ archivo.nombre }}</h2>
+                <div class="img">
+                  <img src="/{{ archivo.captura.url }}" alt="{{ archivo.nombre }}">
+                </div>
+            </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="seccion-registro" id="registro">
+  
+    <div class="col-md-6">
+      <!-- invitacion a registrarse -->
+      <h3>Registro:</h3>
+      <p>Si sos emprendedor jujeño registrate para acceder a los editables y las guías de aplicación</p>
+      <a href="/signup/">Registrate!</a>
+    </div>
+    
+    <div class="col-md-6">
+      <!--Contacto-->
+      <h3>Contacto:</h3>
+      <form method="post">
+        {% csrf_token %}
+        <div class="input-group">
+          <label for="id_email">Email:</label>
+          <input type="email" name="email" id="id_email" class="form-control" required />
+        </div>
+        <div class="input-group">
+          <label for="id_nombre">Nombre:</label>
+          <input type="text" name="nombre" maxlength="20" id="id_nombre" class="form-control" required />
+        </div>
+        <div class="input-group">
+          <label for="id_mensaje">Mensaje:</label>
+          <textarea name="mensaje" required cols="40" width="100%" rows="2" id="id_mensaje" class="form-control"></textarea>
+        </div>
+      
+        <button type="submit">Enviar Consulta</button>
+      </form>
+    </div>
+</section>
+
+<script>
+$('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 580,
+  gutter: 5,
+  fitWidth: true
+});
+</script>
+
+</section>
+
+{% endblock %}

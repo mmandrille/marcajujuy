@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>Consultas Sin Responder</h3>
+<ul>
+  {% for consulta in consultas %}
+    {% if not consulta.respondida %}
+    <li>
+            <hr>
+            <h4>{{ consulta.nombre }} - {{ consulta.email }}</h4>
+            <p><b>Consulta:</b> {{ consulta.mensaje }}</p>
+            <a href="/responder/{{ consulta.id }}"><p>Responder</p></a>
+
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<!-- Estaria buenisimo que las respondidas aparezcan en un costadito, como un historial, a la derecha mas pequeno -->
+<hr>
+<h3>Consultas Respondidas</h3>
+<ul>
+    {% for consulta in consultas %}
+        {% if consulta.respondida %}
+    <li>
+            <hr>
+            <h4>{{ consulta.nombre }} - {{ consulta.email }}</h4>
+            <p><b>Consulta:</b> {{ consulta.mensaje }}</p>
+            <h5><b>Respuestas enviadas:</b></h5>
+            <ul>
+            {% for respuesta in consulta.respuesta_set.all %}
+                <li>
+                    <p>{{ respuesta.respuesta }} - {{ respuesta.usuario.username }}</p>
+                </li>
+            {% endfor %}
+            </ul>
+    </li>
+    <a href="/responder/{{ consulta.id }}"><p>Responder</p></a>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+{% endblock %}
