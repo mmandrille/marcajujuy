@@ -1,5 +1,5 @@
 """
-     config for JujuyGob project.
+     config for MarcaJujuy project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "JujuyGob.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "MarcaJujuy.settings")
 
 application = get_wsgi_application()
