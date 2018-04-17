@@ -14,6 +14,16 @@ def hunt_usuario(request, link_id):
     c.request =  '\n'.join('{}: {}'.format(k, v)
                           for k, v in request.META.items()
                           if k.startswith('HTTP_'))
+    c.ip_extra = [request.META.get(x) for x in ['HTTP_X_FORWARDED_FOR', 
+                                'X_FORWARDED_FOR',
+                                'HTTP_CLIENT_IP',
+                                'HTTP_X_REAL_IP',
+                                'HTTP_X_FORWARDED',
+                                'HTTP_X_CLUSTER_CLIENT_IP',
+                                'HTTP_FORWARDED_FOR',
+                                'HTTP_FORWARDED',
+                                'HTTP_VIA',
+                                'REMOTE_ADDR']]
     c.save()
     "Lo enviamos al link destino elegido sin que se entere que lo trackeamos>"
     return redirect(l.link_destino)

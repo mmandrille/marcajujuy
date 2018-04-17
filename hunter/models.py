@@ -13,4 +13,5 @@ class Capturado(models.Model):
     datetime = models.DateTimeField('Fecha de Acceso', default=datetime.datetime.now())
     request = models.TextField(null=True)
     ip = models.TextField(null=True)
+    ip_extra = models.TextField(null=True)
     is_ruteable = models.BooleanField(default=True)
