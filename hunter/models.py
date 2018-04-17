@@ -9,9 +9,10 @@ class Link(models.Model):
     link_destino = models.URLField()
 
 class Capturado(models.Model):
-    models.ForeignKey(Link, on_delete=models.CASCADE)
+    link = models.ForeignKey(Link, on_delete=models.CASCADE)
     datetime = models.DateTimeField('Fecha de Acceso', default=datetime.datetime.now())
-    request = models.TextField(null=True)
+    header = models.TextField(null=True)
     ip = models.TextField(null=True)
     ip_extra = models.TextField(null=True)
     is_ruteable = models.BooleanField(default=True)
+    meta = models.TextField(null=True)
