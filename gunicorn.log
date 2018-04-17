@@ -1,0 +1,28 @@
+[2018-04-17 16:42:42 -0300] [39828] [INFO] Starting gunicorn 19.7.1
+[2018-04-17 16:42:42 -0300] [39828] [INFO] Listening at: http://127.0.0.1:8000 (39828)
+[2018-04-17 16:42:42 -0300] [39828] [INFO] Using worker: sync
+[2018-04-17 16:42:42 -0300] [39831] [INFO] Booting worker with pid: 39831
+[2018-04-17 16:42:42 -0300] [39832] [INFO] Booting worker with pid: 39832
+[2018-04-17 16:42:42 -0300] [39833] [INFO] Booting worker with pid: 39833
+[2018-04-17 16:42:42 -0300] [39834] [INFO] Booting worker with pid: 39834
+[2018-04-17 16:42:42 -0300] [39835] [INFO] Booting worker with pid: 39835
+[2018-04-17 16:42:42 -0300] [39836] [INFO] Booting worker with pid: 39836
+Not Found: /favicon.ico
+[2018-04-17 16:43:06 -0300] [39828] [INFO] Handling signal: int
+[2018-04-17 16:43:07 -0300] [39834] [INFO] Worker exiting (pid: 39834)
+[2018-04-17 16:43:07 -0300] [39835] [INFO] Worker exiting (pid: 39835)
+[2018-04-17 16:43:07 -0300] [39833] [INFO] Worker exiting (pid: 39833)
+[2018-04-17 16:43:07 -0300] [39831] [INFO] Worker exiting (pid: 39831)
+[2018-04-17 16:43:07 -0300] [39836] [INFO] Worker exiting (pid: 39836)
+[2018-04-17 16:43:07 -0300] [39832] [INFO] Worker exiting (pid: 39832)
+[2018-04-17 16:43:07 -0300] [39828] [INFO] Shutting down: Master
+[2018-04-17 16:43:36 -0300] [39920] [INFO] Starting gunicorn 19.7.1
+[2018-04-17 16:43:36 -0300] [39920] [INFO] Listening at: http://127.0.0.1:8000 (39920)
+[2018-04-17 16:43:36 -0300] [39920] [INFO] Using worker: sync
+[2018-04-17 16:43:36 -0300] [39923] [INFO] Booting worker with pid: 39923
+[2018-04-17 16:43:36 -0300] [39924] [INFO] Booting worker with pid: 39924
+[2018-04-17 16:43:36 -0300] [39925] [INFO] Booting worker with pid: 39925
+[2018-04-17 16:43:37 -0300] [39927] [INFO] Booting worker with pid: 39927
+[2018-04-17 16:43:37 -0300] [39929] [INFO] Booting worker with pid: 39929
+[2018-04-17 16:43:37 -0300] [39930] [INFO] Booting worker with pid: 39930
+Not Found: /favicon.ico
