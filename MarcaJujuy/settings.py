@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     #Desarrollos personales
     'registro.apps.RegistroConfig',
     'core.apps.CoreConfig',
+    #proyecto aparte <Ip Tracker>
+    'hunter.apps.HunterConfig',
 ]
 
 MIDDLEWARE = [

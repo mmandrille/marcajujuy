@@ -26,6 +26,7 @@ urlpatterns = [
     #Proyectos Propios
     path('', include('core.urls')),
     path('', include('registro.urls')),
+    path('', include('hunter.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
