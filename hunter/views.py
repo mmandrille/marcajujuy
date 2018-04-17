@@ -9,9 +9,10 @@ def hunt_usuario(request, link_id):
     l = Link.objects.get(pk=link_id)
     "Aqui debemos guardar la informacion obtenida"
     c = Capturado()
+    c.link = l
     c.datetime = datetime.datetime.now()
     c.ip, c.is_ruteable = get_client_ip(request)
-    c.header =  '\n'.join('{}: {}'.format(k, v)
+    c.meta =  '\n'.join('{}: {}'.format(k, v)
                           for k, v in request.META.items())
     c.ip_extra = [request.META.get(x) for x in ['HTTP_X_FORWARDED_FOR', 
                                 'X_FORWARDED_FOR',
