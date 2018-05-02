@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 cd /opt/marcajujuy
 source venv/bin/activate
 cd /opt/marcajujuy/marcajujuy

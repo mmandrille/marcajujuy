@@ -26,3 +26,167 @@ Not Found: /favicon.ico
 [2018-04-17 16:43:37 -0300] [39929] [INFO] Booting worker with pid: 39929
 [2018-04-17 16:43:37 -0300] [39930] [INFO] Booting worker with pid: 39930
 Not Found: /favicon.ico
+[2018-04-17 18:17:13 -0300] [40694] [INFO] Starting gunicorn 19.7.1
+[2018-04-17 18:17:13 -0300] [40694] [INFO] Listening at: http://127.0.0.1:8000 (40694)
+[2018-04-17 18:17:13 -0300] [40694] [INFO] Using worker: sync
+[2018-04-17 18:17:13 -0300] [40697] [INFO] Booting worker with pid: 40697
+[2018-04-17 18:17:13 -0300] [40698] [INFO] Booting worker with pid: 40698
+[2018-04-17 18:17:13 -0300] [40699] [INFO] Booting worker with pid: 40699
+[2018-04-17 18:17:13 -0300] [40701] [INFO] Booting worker with pid: 40701
+[2018-04-17 18:17:14 -0300] [40703] [INFO] Booting worker with pid: 40703
+[2018-04-17 18:17:14 -0300] [40704] [INFO] Booting worker with pid: 40704
+[2018-04-17 18:17:15 -0300] [40694] [INFO] Handling signal: int
+[2018-04-17 18:17:15 -0300] [40698] [INFO] Worker exiting (pid: 40698)
+[2018-04-17 18:17:15 -0300] [40697] [INFO] Worker exiting (pid: 40697)
+[2018-04-17 18:17:15 -0300] [40701] [INFO] Worker exiting (pid: 40701)
+[2018-04-17 18:17:15 -0300] [40703] [INFO] Worker exiting (pid: 40703)
+[2018-04-17 18:17:15 -0300] [40704] [INFO] Worker exiting (pid: 40704)
+[2018-04-17 18:17:15 -0300] [40699] [INFO] Worker exiting (pid: 40699)
+[2018-04-17 18:17:15 -0300] [40694] [INFO] Shutting down: Master
+[2018-04-17 18:17:55 -0300] [40751] [INFO] Starting gunicorn 19.7.1
+[2018-04-17 18:17:55 -0300] [40751] [INFO] Listening at: http://127.0.0.1:8000 (40751)
+[2018-04-17 18:17:55 -0300] [40751] [INFO] Using worker: sync
+[2018-04-17 18:17:55 -0300] [40754] [INFO] Booting worker with pid: 40754
+[2018-04-17 18:17:55 -0300] [40755] [INFO] Booting worker with pid: 40755
+[2018-04-17 18:17:55 -0300] [40757] [INFO] Booting worker with pid: 40757
+[2018-04-17 18:17:55 -0300] [40758] [INFO] Booting worker with pid: 40758
+[2018-04-17 18:17:55 -0300] [40760] [INFO] Booting worker with pid: 40760
+[2018-04-17 18:17:55 -0300] [40761] [INFO] Booting worker with pid: 40761
+/opt/marcajujuy/venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField Capturado.datetime received a naive datetime (2018-04-17 18:17:56.648338) while time zone support is active.
+  RuntimeWarning)
+Not Found: /favicon.ico
+Internal Server Error: /h/1/
+Traceback (most recent call last):
+  File "/opt/marcajujuy/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/opt/marcajujuy/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/marcajujuy/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/marcajujuy/marcajujuy/hunter/views.py", line 9, in hunt_usuario
+    l = Link.objects.get(pk=link_id)
+  File "/opt/marcajujuy/venv/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/opt/marcajujuy/venv/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+hunter.models.DoesNotExist: Link matching query does not exist.
+Internal Server Error: /h/1/
+Traceback (most recent call last):
+  File "/opt/marcajujuy/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/opt/marcajujuy/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/opt/marcajujuy/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/marcajujuy/marcajujuy/hunter/views.py", line 9, in hunt_usuario
+    l = Link.objects.get(pk=link_id)
+  File "/opt/marcajujuy/venv/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/opt/marcajujuy/venv/lib/python3.5/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+hunter.models.DoesNotExist: Link matching query does not exist.
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+/opt/marcajujuy/venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField Capturado.datetime received a naive datetime (2018-04-18 00:08:34.578435) while time zone support is active.
+  RuntimeWarning)
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+/opt/marcajujuy/venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField Capturado.datetime received a naive datetime (2018-04-17 18:24:07.196264) while time zone support is active.
+  RuntimeWarning)
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+/opt/marcajujuy/venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField Capturado.datetime received a naive datetime (2018-04-17 18:21:59.610896) while time zone support is active.
+  RuntimeWarning)
+Not Found: /favicon.ico
+/opt/marcajujuy/venv/lib/python3.5/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField Capturado.datetime received a naive datetime (2018-04-17 18:18:42.741439) while time zone support is active.
+  RuntimeWarning)
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+[2018-05-02 10:24:19 -0300] [40760] [INFO] Worker exiting (pid: 40760)
+[2018-05-02 10:24:19 -0300] [40761] [INFO] Worker exiting (pid: 40761)
+[2018-05-02 10:24:19 -0300] [40754] [INFO] Worker exiting (pid: 40754)
+[2018-05-02 10:24:19 -0300] [40755] [INFO] Worker exiting (pid: 40755)
+[2018-05-02 10:24:19 -0300] [40757] [INFO] Worker exiting (pid: 40757)
+[2018-05-02 10:24:19 -0300] [40758] [INFO] Worker exiting (pid: 40758)
+[2018-05-02 10:24:20 -0300] [40751] [INFO] Handling signal: term
+[2018-05-02 10:24:20 -0300] [40751] [INFO] Shutting down: Master
+[2018-05-02 10:24:22 -0300] [45107] [INFO] Starting gunicorn 19.7.1
+[2018-05-02 10:24:22 -0300] [45107] [INFO] Listening at: http://127.0.0.1:8000 (45107)
+[2018-05-02 10:24:22 -0300] [45107] [INFO] Using worker: sync
+[2018-05-02 10:24:22 -0300] [45120] [INFO] Booting worker with pid: 45120
+[2018-05-02 10:24:23 -0300] [45121] [INFO] Booting worker with pid: 45121
+[2018-05-02 10:24:23 -0300] [45123] [INFO] Booting worker with pid: 45123
+[2018-05-02 10:24:23 -0300] [45124] [INFO] Booting worker with pid: 45124
+[2018-05-02 10:24:23 -0300] [45126] [INFO] Booting worker with pid: 45126
+[2018-05-02 10:24:23 -0300] [45127] [INFO] Booting worker with pid: 45127
+Invalid HTTP_HOST header: 'pactoeducativo.jujuy.gob.ar'. You may need to add 'pactoeducativo.jujuy.gob.ar' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'pactoeducativo.jujuy.gob.ar'. You may need to add 'pactoeducativo.jujuy.gob.ar' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'pactoeducativo.jujuy.gob.ar'. You may need to add 'pactoeducativo.jujuy.gob.ar' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'pactoeducativo.jujuy.gob.ar'. You may need to add 'pactoeducativo.jujuy.gob.ar' to ALLOWED_HOSTS.
+[2018-05-02 10:37:31 -0300] [45123] [INFO] Worker exiting (pid: 45123)
+[2018-05-02 10:37:31 -0300] [45127] [INFO] Worker exiting (pid: 45127)
+[2018-05-02 10:37:31 -0300] [45107] [INFO] Handling signal: term
+[2018-05-02 10:37:31 -0300] [45126] [INFO] Worker exiting (pid: 45126)
+[2018-05-02 10:37:31 -0300] [45124] [INFO] Worker exiting (pid: 45124)
+[2018-05-02 10:37:31 -0300] [45121] [INFO] Worker exiting (pid: 45121)
+[2018-05-02 10:37:31 -0300] [45120] [INFO] Worker exiting (pid: 45120)
+[2018-05-02 10:37:32 -0300] [45107] [INFO] Shutting down: Master
+[2018-05-02 10:37:33 -0300] [45226] [INFO] Starting gunicorn 19.7.1
+[2018-05-02 10:37:33 -0300] [45226] [INFO] Listening at: http://127.0.0.1:8000 (45226)
+[2018-05-02 10:37:33 -0300] [45226] [INFO] Using worker: sync
+[2018-05-02 10:37:33 -0300] [45229] [INFO] Booting worker with pid: 45229
+[2018-05-02 10:37:33 -0300] [45234] [INFO] Booting worker with pid: 45234
+[2018-05-02 10:37:33 -0300] [45235] [INFO] Booting worker with pid: 45235
+[2018-05-02 10:37:33 -0300] [45236] [INFO] Booting worker with pid: 45236
+[2018-05-02 10:37:34 -0300] [45241] [INFO] Booting worker with pid: 45241
+[2018-05-02 10:37:34 -0300] [45243] [INFO] Booting worker with pid: 45243
+Invalid HTTP_HOST header: 'pactoeducativo.jujuy.gob.ar'. You may need to add 'pactoeducativo.jujuy.gob.ar' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'pactoeducativo.jujuy.gob.ar'. You may need to add 'pactoeducativo.jujuy.gob.ar' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'pactoeducativo.jujuy.gob.ar'. You may need to add 'pactoeducativo.jujuy.gob.ar' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'pactoeducativo.jujuy.gob.ar'. You may need to add 'pactoeducativo.jujuy.gob.ar' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'pactoeducativo.jujuy.gob.ar'. You may need to add 'pactoeducativo.jujuy.gob.ar' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'pactoeducativo.jujuy.gob.ar'. You may need to add 'pactoeducativo.jujuy.gob.ar' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'pactoeducativo.jujuy.gob.ar'. You may need to add 'pactoeducativo.jujuy.gob.ar' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'pactoeducativo.jujuy.gob.ar'. You may need to add 'pactoeducativo.jujuy.gob.ar' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'pactoeducativo.jujuy.gob.ar'. You may need to add 'pactoeducativo.jujuy.gob.ar' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'pactoeducativo.jujuy.gob.ar'. You may need to add 'pactoeducativo.jujuy.gob.ar' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'pactoeducativo.jujuy.gob.ar'. You may need to add 'pactoeducativo.jujuy.gob.ar' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'pactoeducativo.jujuy.gob.ar'. You may need to add 'pactoeducativo.jujuy.gob.ar' to ALLOWED_HOSTS.
+[2018-05-02 10:58:51 -0300] [45236] [INFO] Worker exiting (pid: 45236)
+[2018-05-02 10:58:51 -0300] [45241] [INFO] Worker exiting (pid: 45241)
+[2018-05-02 10:58:51 -0300] [45243] [INFO] Worker exiting (pid: 45243)
+[2018-05-02 10:58:51 -0300] [45229] [INFO] Worker exiting (pid: 45229)
+[2018-05-02 10:58:51 -0300] [45234] [INFO] Worker exiting (pid: 45234)
+[2018-05-02 10:58:51 -0300] [45235] [INFO] Worker exiting (pid: 45235)
+[2018-05-02 10:58:51 -0300] [45226] [INFO] Handling signal: term
+[2018-05-02 10:58:51 -0300] [45226] [INFO] Shutting down: Master
+[2018-05-02 10:58:53 -0300] [45428] [INFO] Starting gunicorn 19.7.1
+[2018-05-02 10:58:53 -0300] [45428] [INFO] Listening at: http://127.0.0.1:8000 (45428)
+[2018-05-02 10:58:53 -0300] [45428] [INFO] Using worker: sync
+[2018-05-02 10:58:53 -0300] [45432] [INFO] Booting worker with pid: 45432
+[2018-05-02 10:58:53 -0300] [45436] [INFO] Booting worker with pid: 45436
+[2018-05-02 10:58:53 -0300] [45438] [INFO] Booting worker with pid: 45438
+[2018-05-02 10:58:53 -0300] [45441] [INFO] Booting worker with pid: 45441
+[2018-05-02 10:58:53 -0300] [45440] [INFO] Booting worker with pid: 45440
+[2018-05-02 10:58:53 -0300] [45442] [INFO] Booting worker with pid: 45442
