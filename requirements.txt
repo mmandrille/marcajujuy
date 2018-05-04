@@ -2,3 +2,4 @@ Django
 django-star-ratings
 pillow
 django-ipware
+django-tinymce

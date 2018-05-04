@@ -22,7 +22,8 @@ from django.conf.urls import url
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^ratings/', include('star_ratings.urls', namespace='ratings',)),
-
+    url(r'^tinymce/', include('tinymce.urls')),
+    
     #Proyectos Propios
     path('', include('core.urls')),
     path('', include('registro.urls')),

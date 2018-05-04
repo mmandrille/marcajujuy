@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #PlugIns Extras
     'star_ratings',
+    'tinymce',
     #Desarrollos personales
     'registro.apps.RegistroConfig',
     'core.apps.CoreConfig',
