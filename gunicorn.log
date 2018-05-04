@@ -190,3 +190,54 @@ Invalid HTTP_HOST header: 'pactoeducativo.jujuy.gob.ar'. You may need to add 'pa
 [2018-05-02 10:58:53 -0300] [45441] [INFO] Booting worker with pid: 45441
 [2018-05-02 10:58:53 -0300] [45440] [INFO] Booting worker with pid: 45440
 [2018-05-02 10:58:53 -0300] [45442] [INFO] Booting worker with pid: 45442
+[2018-05-04 05:36:22 -0300] [45440] [INFO] Worker exiting (pid: 45440)
+[2018-05-04 05:36:22 -0300] [45442] [INFO] Worker exiting (pid: 45442)
+[2018-05-04 05:36:22 -0300] [45438] [INFO] Worker exiting (pid: 45438)
+[2018-05-04 05:36:22 -0300] [45441] [INFO] Worker exiting (pid: 45441)
+[2018-05-04 05:36:22 -0300] [45436] [INFO] Worker exiting (pid: 45436)
+[2018-05-04 05:36:22 -0300] [45432] [INFO] Worker exiting (pid: 45432)
+[2018-05-04 05:36:22 -0300] [45428] [INFO] Handling signal: term
+[2018-05-04 05:36:23 -0300] [45428] [INFO] Shutting down: Master
+[2018-05-04 05:36:25 -0300] [4895] [INFO] Starting gunicorn 19.7.1
+[2018-05-04 05:36:25 -0300] [4895] [INFO] Listening at: http://127.0.0.1:8000 (4895)
+[2018-05-04 05:36:25 -0300] [4895] [INFO] Using worker: sync
+[2018-05-04 05:36:25 -0300] [4901] [INFO] Booting worker with pid: 4901
+[2018-05-04 05:36:25 -0300] [4902] [INFO] Booting worker with pid: 4902
+[2018-05-04 05:36:25 -0300] [4904] [INFO] Booting worker with pid: 4904
+[2018-05-04 05:36:25 -0300] [4906] [INFO] Booting worker with pid: 4906
+[2018-05-04 05:36:25 -0300] [4907] [INFO] Booting worker with pid: 4907
+[2018-05-04 05:36:25 -0300] [4908] [INFO] Booting worker with pid: 4908
+[2018-05-04 05:37:04 -0300] [4902] [INFO] Worker exiting (pid: 4902)
+[2018-05-04 05:37:04 -0300] [4906] [INFO] Worker exiting (pid: 4906)
+[2018-05-04 05:37:04 -0300] [4895] [INFO] Handling signal: term
+[2018-05-04 05:37:04 -0300] [4907] [INFO] Worker exiting (pid: 4907)
+[2018-05-04 05:37:04 -0300] [4904] [INFO] Worker exiting (pid: 4904)
+[2018-05-04 05:37:04 -0300] [4901] [INFO] Worker exiting (pid: 4901)
+[2018-05-04 05:37:04 -0300] [4908] [INFO] Worker exiting (pid: 4908)
+[2018-05-04 05:37:04 -0300] [4895] [INFO] Shutting down: Master
+[2018-05-04 05:37:06 -0300] [4975] [INFO] Starting gunicorn 19.7.1
+[2018-05-04 05:37:06 -0300] [4975] [INFO] Listening at: http://127.0.0.1:8000 (4975)
+[2018-05-04 05:37:06 -0300] [4975] [INFO] Using worker: sync
+[2018-05-04 05:37:06 -0300] [4980] [INFO] Booting worker with pid: 4980
+[2018-05-04 05:37:06 -0300] [4982] [INFO] Booting worker with pid: 4982
+[2018-05-04 05:37:06 -0300] [4984] [INFO] Booting worker with pid: 4984
+[2018-05-04 05:37:06 -0300] [4990] [INFO] Booting worker with pid: 4990
+[2018-05-04 05:37:06 -0300] [4992] [INFO] Booting worker with pid: 4992
+[2018-05-04 05:37:06 -0300] [4993] [INFO] Booting worker with pid: 4993
+[2018-05-04 05:42:42 -0300] [4993] [INFO] Worker exiting (pid: 4993)
+[2018-05-04 05:42:42 -0300] [4990] [INFO] Worker exiting (pid: 4990)
+[2018-05-04 05:42:42 -0300] [4975] [INFO] Handling signal: term
+[2018-05-04 05:42:42 -0300] [4992] [INFO] Worker exiting (pid: 4992)
+[2018-05-04 05:42:42 -0300] [4984] [INFO] Worker exiting (pid: 4984)
+[2018-05-04 05:42:42 -0300] [4982] [INFO] Worker exiting (pid: 4982)
+[2018-05-04 05:42:42 -0300] [4980] [INFO] Worker exiting (pid: 4980)
+[2018-05-04 05:42:42 -0300] [4975] [INFO] Shutting down: Master
+[2018-05-04 05:42:44 -0300] [5104] [INFO] Starting gunicorn 19.7.1
+[2018-05-04 05:42:44 -0300] [5104] [INFO] Listening at: http://127.0.0.1:8000 (5104)
+[2018-05-04 05:42:44 -0300] [5104] [INFO] Using worker: sync
+[2018-05-04 05:42:44 -0300] [5109] [INFO] Booting worker with pid: 5109
+[2018-05-04 05:42:44 -0300] [5113] [INFO] Booting worker with pid: 5113
+[2018-05-04 05:42:44 -0300] [5115] [INFO] Booting worker with pid: 5115
+[2018-05-04 05:42:44 -0300] [5118] [INFO] Booting worker with pid: 5118
+[2018-05-04 05:42:44 -0300] [5121] [INFO] Booting worker with pid: 5121
+[2018-05-04 05:42:44 -0300] [5122] [INFO] Booting worker with pid: 5122
