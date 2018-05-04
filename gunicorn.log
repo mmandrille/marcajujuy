@@ -241,3 +241,20 @@ Invalid HTTP_HOST header: 'pactoeducativo.jujuy.gob.ar'. You may need to add 'pa
 [2018-05-04 05:42:44 -0300] [5118] [INFO] Booting worker with pid: 5118
 [2018-05-04 05:42:44 -0300] [5121] [INFO] Booting worker with pid: 5121
 [2018-05-04 05:42:44 -0300] [5122] [INFO] Booting worker with pid: 5122
+[2018-05-04 16:49:02 -0300] [5118] [INFO] Worker exiting (pid: 5118)
+[2018-05-04 16:49:02 -0300] [5115] [INFO] Worker exiting (pid: 5115)
+[2018-05-04 16:49:02 -0300] [5121] [INFO] Worker exiting (pid: 5121)
+[2018-05-04 16:49:02 -0300] [5122] [INFO] Worker exiting (pid: 5122)
+[2018-05-04 16:49:02 -0300] [5109] [INFO] Worker exiting (pid: 5109)
+[2018-05-04 16:49:02 -0300] [5113] [INFO] Worker exiting (pid: 5113)
+[2018-05-04 16:49:02 -0300] [5104] [INFO] Handling signal: term
+[2018-05-04 16:49:02 -0300] [5104] [INFO] Shutting down: Master
+[2018-05-04 16:49:04 -0300] [6750] [INFO] Starting gunicorn 19.7.1
+[2018-05-04 16:49:04 -0300] [6750] [INFO] Listening at: http://127.0.0.1:8000 (6750)
+[2018-05-04 16:49:04 -0300] [6750] [INFO] Using worker: sync
+[2018-05-04 16:49:04 -0300] [6754] [INFO] Booting worker with pid: 6754
+[2018-05-04 16:49:04 -0300] [6759] [INFO] Booting worker with pid: 6759
+[2018-05-04 16:49:04 -0300] [6761] [INFO] Booting worker with pid: 6761
+[2018-05-04 16:49:04 -0300] [6763] [INFO] Booting worker with pid: 6763
+[2018-05-04 16:49:04 -0300] [6764] [INFO] Booting worker with pid: 6764
+[2018-05-04 16:49:04 -0300] [6769] [INFO] Booting worker with pid: 6769
