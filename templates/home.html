@@ -37,7 +37,7 @@
       <li>
           <div>
             <a href="#"><h3>{{ faq.pregunta }}</h3></a>
-            <p>{{ faq.respuesta }}</p>
+            <p>{{ faq.respuesta | safe }}</p>
           </div>
       </li>
     {% endfor %}

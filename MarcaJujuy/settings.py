@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'kjtjf9mfys+0^*4%nwrvpg9o&)4hb405hs*74cw_wt+aphn%=1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['192.168.1.87', 'localhost', 'http://127.0.0.1/', 'marca.jujuy.gob.ar']
 
@@ -125,7 +125,7 @@ USE_TZ = True
 MEDIA_URL = 'archivos/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "archivos")
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
+#STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
