@@ -225,7 +225,7 @@ section.seccion-faq hr
     width: 90%;
 }
 
-ul.faq li p
+ul.faq li .contenedor-respuesta
 {
    display: none;
 }

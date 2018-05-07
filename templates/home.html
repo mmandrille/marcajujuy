@@ -37,7 +37,8 @@
       <li>
           <div class="contenedor-faq">
             <a href="#"><h3>{{ faq.pregunta }}</h3></a>
-            <p>{{ faq.respuesta | safe }}</p>
+            
+            <div class="contenedor-respuesta">{{ faq.respuesta | safe }}</div>
           </div>
       </li>
     {% endfor %}
