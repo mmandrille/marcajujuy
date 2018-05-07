@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <br><h2>Consulta:</h2>
+    <h3>{{ consulta.nombre }} - {{ consulta.email }}</h3>
+    <p><b>Consulta:</b>{{ consulta.mensaje }}</p>
+    {% if consulta.respondida %}
+    <hr>
+    <h3> Respuestas enviadas:</h3>
+        {% for respuesta in consulta.respuesta_set.all %}
+            <p>{{ respuesta.respuesta }} - {{ respuesta.usuario.username }}</p>
+        {% endfor %}
+    {% endif %}
+    <hr>
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Responder</button>
+    </form>
+    
+{% endblock %}
