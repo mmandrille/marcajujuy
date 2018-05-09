@@ -5,7 +5,7 @@ from django.db import models
 from django.core.files.storage import FileSystemStorage
 from django.contrib.auth.models import *
 from django.contrib.auth.models import User
-from MarcaJujuy.settings import MEDIA_URL
+from marcajujuy.settings import MEDIA_URL
 from django.contrib.contenttypes.fields import GenericRelation
 from star_ratings.models import Rating
 from tinymce.models import HTMLField
