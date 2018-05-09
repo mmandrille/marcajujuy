@@ -9,7 +9,7 @@ $(document).ready()
     
     var respuesta = $(this).parent().find('.contenedor-respuesta').html();
     
-    $('.respuesta-activa').html("<h3>" + $(this).text() + "</h3><div>" + respuesta + "</div>");
+    $('.respuesta-activa').html("<h3>" + $(this).text() + "</h3><p>" + respuesta + "</p>");
   });
   
   if ($('ul.faq'))
@@ -17,7 +17,7 @@ $(document).ready()
     $('ul.faq li').first().addClass("active");
     var respuesta = $('ul.faq li').first().find('.contenedor-respuesta').html();
     
-    $('.respuesta-activa').html("<h3>" + $('ul.faq li').first().find("h3").text() + "</h3><div>" + respuesta + "</div>");
+    $('.respuesta-activa').html("<h3>" + $('ul.faq li').first().find("h3").text() + "</h3><p>" + respuesta + "</p>");
   }
  
   var altura = $('.nav').offset().top;

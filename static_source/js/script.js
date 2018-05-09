@@ -7,7 +7,7 @@ $(document).ready()
     $('ul.faq li').removeClass("active");
     $(this).parent().parent().addClass("active");
     
-    var respuesta = $(this).parent().find('p').html();
+    var respuesta = $(this).parent().find('.contenedor-respuesta').html();
     
     $('.respuesta-activa').html("<h3>" + $(this).text() + "</h3><p>" + respuesta + "</p>");
   });
@@ -15,7 +15,7 @@ $(document).ready()
   if ($('ul.faq'))
   {
     $('ul.faq li').first().addClass("active");
-    var respuesta = $('ul.faq li').first().find('p').html();
+    var respuesta = $('ul.faq li').first().find('.contenedor-respuesta').html();
     
     $('.respuesta-activa').html("<h3>" + $('ul.faq li').first().find("h3").text() + "</h3><p>" + respuesta + "</p>");
   }
