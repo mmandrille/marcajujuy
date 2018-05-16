@@ -3,8 +3,11 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib.admin.views.decorators import staff_member_required
 from django.core.mail import EmailMessage
-from .forms import SignUpForm
+from django.http import HttpResponse, HttpResponseRedirect
+
+#Import personales
 from .decorators import anonymous_required
+from .forms import SignUpForm
 
 #Vistas
 @anonymous_required
@@ -24,10 +27,9 @@ def signup(request):
             #Guardamos el usuario
             user.is_active = False
             user.save()
-            raw_password = form.cleaned_data.get('password1')
-            user = authenticate(username=user.username, password=raw_password)
+            login(request, user, backend='django.contrib.auth.backends.ModelBackend')
             login(request, user)
-            return redirect('home')
+            return render(request, 'registrado.html',)
     else:
         form = SignUpForm()
     return render(request, 'signup.html', {'form': form})
