@@ -54,7 +54,7 @@ def mostrar_archivo(request, archivo_id):
         comentarios = Comentario.objects.filter(archivo=archivo_id)
 
         #Formulario de Comentario
-        form = ComentarioForm
+        form = ComentarioForm()
     except Archivo.DoesNotExist:
         raise Http404("El Archivo No Existe")
     #Si salio bien mostramos el archivo

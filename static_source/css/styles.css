@@ -2,7 +2,7 @@
     font-family: 'Archia';
     font-style: normal;
     font-weight: normal;
-    src: local('Archia'), url('/static/fonts/Archia-Thin.otf') format('truetype');
+    src: local('Archia'), url('../fonts/Archia-Thin.otf') format('truetype');
   }
 
 body
@@ -147,7 +147,7 @@ body
 
 .logo-grande
 {
-    background: url(/static/img/tilcara.jpg);
+    background: url('../img/tilcara.jpg');
     max-width: 1024px;
     height: 460px;
     margin: auto;
@@ -159,7 +159,7 @@ body
 
 .logo-overlay
 {
-    background: url(/static/img/logo2.png);
+    background: url('../img/logo2.png');
     width: 100%;
     height: 500px;
     position: absolute;
@@ -169,7 +169,7 @@ body
 
 .logo-nubes
 {    
-    background: url(/static/img/nubes.png);
+    background: url('../img/nubes.png');
     width: 100%;
     height: 500px;
     position: absolute;
@@ -184,7 +184,7 @@ body
 
 .logo-nubes2
 {
-    background: url(/static/img/nubes2.png);
+    background: url('../img/nubes2.png');
     width: 100%;
     height: 500px;
     position: absolute;
@@ -240,7 +240,6 @@ ul.faq li .contenedor-respuesta
 ul.faq li
 {
    display: block;
-   width: 100%;
 }
 
 ul.faq li h3
@@ -456,11 +455,21 @@ section.seccion-faq p
 {
    display: table;
    color: white;
+   width: 65%;
+   margin: auto;
+   align-self: center;
+   
 }
 
 .mostrar-archivo .col-md-6{
-   padding: 20px;
+    padding: 20px;
+    width: 70%;
 }
+
+.mostrar-archivo .col-md-3{
+    padding: 20px;
+    width: 30%;
+ }
 
 .mostrar-archivo .padding-top
 {
@@ -470,6 +479,17 @@ section.seccion-faq p
 .mostrar-archivo p.descripcion
 {
    font-size: 1.2em;
+}
+
+.mostrar-archivo .comentarios
+{
+    overflow: auto;
+    max-height: 30vh;
+}
+
+.mostrar-archivo .dejar_comentarios
+{
+    color: black;
 }
 
 .grid
@@ -649,7 +669,7 @@ section.pagina-registro hr{
 
 section.login
 {
-    background: url(/static/img/tilcara.jpg);
+    background: url('../img/tilcara.jpg');
     width: 100%;
     height: 100%;
     height: calc(100vh - 100px);

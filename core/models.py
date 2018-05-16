@@ -13,7 +13,7 @@ from tinymce.models import HTMLField
 #Create your models here.
 class Archivo(models.Model):
     nombre = models.CharField('Titulo', max_length=200)
-    descripcion = models.TextField()
+    descripcion = HTMLField()
     captura = models.ImageField(storage=FileSystemStorage(location=MEDIA_URL), null=True)
     archivo = models.FileField(upload_to='')
     pub_date = models.DateTimeField('Fecha de Publicacion', default=datetime.datetime.now())

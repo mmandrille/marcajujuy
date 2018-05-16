@@ -144,4 +144,4 @@ EMAIL_HOST_PASSWORD = 'comoyoquiera15'
 
 
 # Rating
-STAR_RATINGS_STAR_SPRITE = '/static/cactus.png'
+#STAR_RATINGS_STAR_SPRITE = '/static/img/cactus.png'

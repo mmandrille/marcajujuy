@@ -9,8 +9,7 @@
             <hr>
             <h4>{{ consulta.nombre }} - {{ consulta.email }}</h4>
             <p><b>Consulta:</b> {{ consulta.mensaje }}</p>
-            <a href="/responder/{{ consulta.id }}"><p>Responder</p></a>
-
+            <a href="{% url 'corejujuy:responder_consulta' consulta.id %}"><p>Responder</p></a>
     </li>
     {% endif %}
   {% endfor %}
@@ -35,7 +34,7 @@
             {% endfor %}
             </ul>
     </li>
-    <a href="/responder/{{ consulta.id }}"><p>Responder</p></a>
+    <a href="{% url 'corejujuy:responder_consulta' consulta.id %}"><p>Responder</p></a>
     {% endif %}
   {% endfor %}
 </ul>

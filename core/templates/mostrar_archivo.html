@@ -4,46 +4,50 @@
 {% block content %}
 
 <section class="seccion-archivos mostrar-archivo" style="padding-bottom: 40px">
-  <h1>{{ archivo.nombre }}</h1>
-  <hr>
-  
   <div class="col-md-6">
-   <img src="/{{ archivo.captura.url }}" height="100%" width="100%" alt="{{ archivo.nombre }}">
+    <h1 class="titulo">{{ archivo.nombre }}</h1>
+    <img src="/{{ archivo.captura.url }}" height="100%" width="100%" alt="{{ archivo.nombre }}">
   </div>
  
-  <div class="col-md-6 padding-top">
+  <div class="col-md-3">
     <h3>Descripcion:</h3>
-    <p class="descripcion">{{ archivo.descripcion }}</p>
+    <p class="descripcion">{{ archivo.descripcion | safe }}</p>
     <hr>
     {% if user.is_authenticated and user.is_active %}
-        <br><a href="/{{ archivo.archivo.url }}">descargar</a>
+        <a href="/{{ archivo.archivo.url }}">descargar</a>
     {% else %}
-        Para poder descargar este archivo debe estar Registrado y Habilitado en el Sitio
+        <p>Para poder descargar este archivo debe estar Registrado y Habilitado en el Sitio</p>
     {% endif %}
     
     
+    <h2>Valoracion:</h2>
+    <div class="rating"></div>
+        {% ratings archivo %}
+        <link rel="stylesheet" href="{% static 'star-ratings/css/star-ratings.css' %}">
+        <script type="text/javascript" src="{% static 'star-ratings/js/dist/star-ratings.min.js' %}"></script>
+    </div>
     
-    <h3>Valoracion:</h3>
-    {% ratings archivo %}
-    <link rel="stylesheet" href="{% static 'star-ratings/css/star-ratings.css' %}">
-    <script type="text/javascript" src="{% static 'star-ratings/js/dist/star-ratings.min.js' %}"></script>
-    
-    <h3>Comentarios</h3>
-      <ul class="comentarios">
-        {% for comentario in comentarios %}
-          <li>{{ comentario.comentario }} - {{ comentario.usuario }} </li>
-        {% endfor %}
-      </ul>
-  </div>
-  
-  <!-- Si esta loggeado Puede dejar comentarios -->
-  {% if user.is_authenticated and user.is_active %}
-      <form method="post">
-          {% csrf_token %}
-          {{ form }}
-          <button type="submit">Comentar</button>
-      </form>
-  {% endif %}
+    <h2>Comentarios</h2>
+    <ul class="comentarios">
+    {% for comentario in comentarios %}
+        <li>{{ comentario.comentario }} - {{ comentario.usuario }} </li>
+    {% endfor %}
+    </ul>
+
+    <!-- Si esta loggeado Puede dejar comentarios -->
+    <div class="dejar_comentarios">
+    {% if user.is_authenticated and user.is_active %}
+        <form method="post">
+            {% csrf_token %}
+            {{ form }}
+            <br>
+            <button type="submit">
+                Comentar
+            </button>
+        </form>
+    {% endif %}
+    </div>
+</div>
 </section>
 
 {% endblock %}
