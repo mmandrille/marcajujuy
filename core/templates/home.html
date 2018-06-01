@@ -6,13 +6,14 @@
     <a href="#body" class="active"><div class="pelotita"></div></a>
     <a href="#faq"><div class="pelotita"></div></a>
     <a href="#archivos"><div class="pelotita"></div></a>
+    <a href="#fotos"><div class="pelotita"></div></a>
     <a href="#registro"><div class="pelotita"></div></a>
   </div>
   
   <section class="full-width logo-principal" id="principal">
     <div class="logo-grande">
         <div class="logo-nubes">
-          
+
         </div>
         <div class="logo-nubes2">
           
@@ -54,9 +55,6 @@
   <!--Listado de Archivos (Aca deberias generar los bloques irregulares)-->
   <br><h1>Archivos</h1>
   <hr>
-  <div class="link-biblioteca">
-      Acceda a la Biblioteca de Archivos <a href="/biblioteca/">Aqui</a>
-  </div>
   <div class="lista-archivos">
     <ul class="grid">
       {% for archivo in archivos %}
@@ -71,6 +69,32 @@
       {% endfor %}
     </ul>
   </div>
+  <div class="link-biblioteca">
+    Acceda a la Biblioteca de Archivos <a href="/biblioteca/">Aqui</a>
+</div>
+</section>
+
+<section class="seccion-fotos full-width" id="fotos">
+  <!--Listado de Archivos (Aca deberias generar los bloques irregulares)-->
+  <br><h1>Fotos</h1>
+  <hr>
+  <div class="lista-fotos">
+    <ul class="grid">
+      {% for album in albums %}
+        <li class="grid-item">
+            <a href="/fotos/{{ album.id }}">
+                <br><h2>{{ album.nombre }}</h2>
+                <div class="img">
+                  <img src="/{{ album.portada.url }}" alt="{{ album.nombre }}">
+                </div>
+            </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="link-biblioteca">
+    Acceda a la Biblioteca de Imagenes <a href="/fotos/">Aqui</a>
+</div>
 </section>
 
 <section class="seccion-registro" id="registro">

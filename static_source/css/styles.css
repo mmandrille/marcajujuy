@@ -221,7 +221,7 @@ section.seccion-faq
 }
 
 section.seccion-faq h1, section.seccion-archivos h1,
-section.pagina-registro h1
+section.pagina-registro h1, section.seccion-fotos h1
 {
    text-align: center;
    color: white;
@@ -405,6 +405,111 @@ section.seccion-faq p
    z-index: 1;
 }
 
+/* Seccion Fotos */
+.seccion-fotos
+{
+   background: #8d3994;
+   border: 10px solid white;
+   border-radius: 20px;
+   padding-top: 40px;
+}
+
+.seccion-fotos hr
+{
+    border-top: 1px solid #f5366d;
+    width: 90%;
+}
+
+.seccion-fotos .link-biblioteca
+{
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.seccion-fotos .link-biblioteca a
+{
+    background: #15b694;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #6e7c7b;
+    border-bottom-color: #4ca091;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-decoration: none;
+}
+
+.lista-fotos
+{
+    text-align: center;
+    padding-left: 0px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: block;
+}
+
+.lista-fotos li a
+{
+   color: white;
+}
+
+.lista-fotos li:first-child
+{
+   max-height: 680px;
+}
+
+.lista-fotos li
+{
+    position: relative;
+    display: inline-block;
+    max-height: 330px;
+    margin: auto;
+}
+
+.lista-fotos li .img{
+   background: #000;
+   border-radius: 5px;
+   box-shadow: 0px 0px 13px #bb3f63;
+   max-height: 30vh;
+   overflow: hidden;
+}
+
+.lista-fotos li .img img{
+   max-width: 100%;
+   max-height: 100%;
+}
+
+.lista-fotos li:hover img
+{
+   opacity: 0.5;
+    
+    -webkit-transition: opacity 500ms ease;
+    -moz-transition: opacity 500ms ease;
+    -ms-transition: opacity 500ms ease;
+    -o-transition: opacity 500ms ease;
+    transition: opacity 500ms ease;
+}
+
+.lista-fotos li h2{
+    opacity: 0;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.lista-fotos li:hover h2{
+   opacity: 1;
+   z-index: 1;
+}
+
+/* BUSCADOR */
 .buscar-archivos
 {
     text-align: center;
@@ -452,6 +557,7 @@ section.seccion-faq p
     border-bottom-color: #4ca091 !important;
 }
 
+/* Seccion Mostrar Archivos */
 .mostrar-archivo
 {
    display: table;

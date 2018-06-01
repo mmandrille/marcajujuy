@@ -7,11 +7,13 @@ from django.core.mail import EmailMessage
 from .models import Faq, Consulta, Respuesta
 from .forms import ContactoForm, ResponderForm
 from biblioteca.models import Archivo
+from fotos.models import Album
 
 #@login_required
 def home(request):
     #Obtenemos los archivos que se van a mostrar:
-    archivos = Archivo.objects.order_by('pub_date')[:5]
+    archivos = Archivo.objects.order_by('pub_date')[:4]
+    albums = Album.objects.order_by('pub_date')[:4]
     #Analizamos si nos mandaron una consulta
     if request.method == 'POST':
         form = ContactoForm(request.POST)
@@ -26,7 +28,7 @@ def home(request):
     #Obtenemos los datos del FAQ
     faqs = Faq.objects.all()
     #Enviamos la pagina
-    return render(request, 'home.html', {'faqs' : faqs, 'archivos': archivos, 'form' : form })
+    return render(request, 'home.html', {'faqs' : faqs, 'archivos': archivos, 'albums': albums, 'form' : form })
 
 @staff_member_required
 def mostrar_consultas(request):
