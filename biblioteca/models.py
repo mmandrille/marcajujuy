@@ -20,14 +20,14 @@ class Archivo(models.Model):
     descripcion = HTMLField()
     captura = models.ImageField(storage=FileSystemStorage(location=MEDIA_URL), null=True)
     archivo = models.FileField(upload_to='')
-    pub_date = models.DateTimeField('Fecha de Publicacion', default=datetime.datetime.now())
+    pub_date = models.DateTimeField('Fecha de Publicacion', default=datetime.datetime.now)
     ratings = GenericRelation(Rating, related_query_name='archivos')
     def __str__(self):
         return self.nombre
 
 #Comentarios
 class Comentario(models.Model):
-    archivo = models.ForeignKey(Archivo, on_delete=models.CASCADE)
+    archivo = models.ForeignKey(Archivo, on_delete=models.CASCADE, related_name='comentarios')
     usuario = models.ForeignKey(User, on_delete=models.CASCADE, related_name='Usuario')
     comentario = models.TextField()
     def __str__(self):
