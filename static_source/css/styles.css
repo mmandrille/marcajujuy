@@ -200,6 +200,7 @@ body
 
 .slogan
 {
+    text-align: right;
     font-size: 1.5em;
     color: white;
     max-width: 1024px;
@@ -768,3 +769,69 @@ section.login button:hover
      -webkit-transform: translateX(-90%);
    }
 }
+
+/* ENCONTRATE */
+
+.encontrate
+{
+ text-align: center;
+ margin-bottom: 30px;
+}
+
+.encontrate .galeria ul
+{
+ list-style: none;
+ padding-top: 20px;
+ text-align: center;
+}
+
+.encontrate .galeria ul li
+{
+    text-align: center;
+    display: inline-block;
+    width: auto;
+    box-shadow: 0 0 15px #ccc;
+    width: 30%;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.encontrate .galeria ul li h2
+{
+     margin-top: 0;
+    color: #1591cd;
+}
+
+.encontrate .galeria ul li img
+{
+ width: 100%;
+}
+
+.encontrate .galeria
+{
+ width: 100%;
+ max-width: 1200px;
+ text-align: center;
+}
+
+.encontrate .galeria .item
+{
+ width: 350px;
+ display: inline-block;
+ margin: 10px;
+  box-shadow: 0 0 15px #ccc;
+}
+
+.encontrate .galeria .item:hover
+{
+ opacity: 0.9;
+ box-shadow: none;
+}
+
+.encontrate .galeria .item img
+{
+ width: 100%;
+}
+
+/* FIN ENCONTRATE */

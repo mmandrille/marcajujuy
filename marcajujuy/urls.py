@@ -27,5 +27,7 @@ urlpatterns = [
     #Proyectos Propios
     path('', include('core.urls')),
     path('', include('registro.urls')),
+    path('biblioteca/', include('biblioteca.urls')),
+    path('fotos/', include('fotos.urls')),
     path('', include('hunter.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

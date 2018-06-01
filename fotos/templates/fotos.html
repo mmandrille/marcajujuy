@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="text-center">Fotos</h1>
+        <hr>
+        <div class="row">
+            {% for album in albums %}
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="thumbnail">
+                        <img src="/archivos/{{ album.portada }}" width="300px">
+                        <div class="caption">
+                            <a href="/fotos/{{ album.id }}">
+                                <h3>{{ album.nombre }}</h3>
+                            </a>
+                            <p>
+                                {{ album.descripcion | safe }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

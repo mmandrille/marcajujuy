@@ -55,13 +55,13 @@
   <br><h1>Archivos</h1>
   <hr>
   <div class="link-biblioteca">
-      Acceda a la Biblioteca de Archivos <a href="/archivo/">Aqui</a>
+      Acceda a la Biblioteca de Archivos <a href="/biblioteca/">Aqui</a>
   </div>
   <div class="lista-archivos">
     <ul class="grid">
       {% for archivo in archivos %}
         <li class="grid-item">
-            <a href="/archivo/{{ archivo.id }}">
+            <a href="/biblioteca/{{ archivo.id }}">
                 <br><h2>{{ archivo.nombre }}</h2>
                 <div class="img">
                   <img src="/{{ archivo.captura.url }}" alt="{{ archivo.nombre }}">

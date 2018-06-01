@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="encontrate">
+    <div class "info_album">
+        <h1>{{ album.nombre }}</h1>
+        {{ album.descripcion | safe }}
+    </div>
+
+    <div class="galeria">
+        {% for foto in fotos %}
+            <div class="item">
+                <a href="/archivos/{{ foto.foto }}" data-lightbox="galeria">
+                    <img src="/archivos/{{ foto.foto }}">
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
