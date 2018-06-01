@@ -143,5 +143,16 @@ EMAIL_HOST_USER = 'mmandrille@gmail.com'
 EMAIL_HOST_PASSWORD = 'comoyoquiera15'
 
 
-# Rating
-#STAR_RATINGS_STAR_SPRITE = '/static/img/cactus.png'
+#Actualizar Statics, no solo nuevas
+AWS_PRELOAD_METADATA = True
+
+#Configuramos Tinymce
+TINYMCE_DEFAULT_CONFIG = {
+    'plugins': "table,xhtmlxtras,paste,searchreplace",
+    'theme': "advanced",
+    "theme_advanced_buttons3_add" : "cite,abbr",
+    'cleanup_on_startup': True,
+    'custom_undo_redo_levels': 10,
+    'width': '70%',
+    'height': '600',
+}
