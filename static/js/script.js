@@ -23,7 +23,7 @@ $(document).ready()
   var altura = $('.nav').offset().top;
 	
   var lastScrollTop = 0;
-  var secciones = ["body", "faq", "archivos", "registro"];
+  var secciones = ["body", "faq", "archivos", "fotos", "registro"];
   var seccionIndex = 0;
   
   $('.home').on('scroll touchmove mousewheel', function(e){
