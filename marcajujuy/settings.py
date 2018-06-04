@@ -45,8 +45,6 @@ INSTALLED_APPS = [
     'core.apps.CoreConfig',
     'fotos.apps.FotosConfig',
     'biblioteca.apps.BibliotecaConfig',
-    #proyecto aparte <Ip Tracker>
-    'hunter.apps.HunterConfig',
 ]
 
 MIDDLEWARE = [
