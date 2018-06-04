@@ -235,7 +235,7 @@ section.seccion-faq hr
 
 ul.faq li .contenedor-respuesta
 {
-   display: none;
+   display: none;   
 }
 
 ul.faq li
@@ -286,6 +286,8 @@ section.seccion-faq .respuesta-activa
     border-radius: 8px;
     margin-right: 70px;
     margin-top: 20px;
+    overflow: auto;
+    max-height: 70vh;
 }
 
 section.seccion-faq .respuesta-activa h3
