@@ -131,15 +131,16 @@ LOGOUT_URL = 'logout'
 LOGIN_REDIRECT_URL = '/'
 
 #Configuracion de Mail
-#CREAR ARCHIVO credenciales.py solo con las variables importadas
+EMAIL_USE_TLS = True
+EMAIL_HOST = ''
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'tucorreo@dominio.com'
+EMAIL_HOST_PASSWORD = 'tupassword'
+#CREAR ARCHIVO credenciales.py solo para Sobre Escribir con las variables importadas
 try:
-    from .credenciales import EMAIL_USE_TLS, EMAIL_HOST, EMAIL_PORT, EMAIL_HOST_USER, EMAIL_HOST_PASSWORD
+    from .credenciales import *
 except ImportError:
-    EMAIL_USE_TLS = True
-    EMAIL_HOST = ''
-    EMAIL_PORT = 587
-    EMAIL_HOST_USER = 'tucorreo@dominio.com'
-    EMAIL_HOST_PASSWORD = 'tupassword'
+    pass
 
 #Actualizar Statics, no solo nuevas
 AWS_PRELOAD_METADATA = True
