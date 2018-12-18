@@ -12,7 +12,9 @@ def mostrar_listado(request):
             archivos = Archivo.objects.filter(nombre__icontains=form.cleaned_data['texto'])
     else:
         archivos = Archivo.objects.order_by('pub_date')[:5]
+    #Instanciamos formulario
     form = BuscarForm
+    #Lanzamos pagina
     return render(request, 'listado_archivos.html', {'archivos': archivos, 'form' : form})
 
 def mostrar_archivo(request, archivo_id):
